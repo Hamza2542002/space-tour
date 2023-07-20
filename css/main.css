@@ -112,9 +112,7 @@ header .h-container span{
   background-image: url("../images/home/background-home-mobile.jpg");
  }
 }
-.content .container{
- height: 86vh;
-}
+
 .container{
  margin: 0 auto;
  display: flex;
@@ -122,6 +120,9 @@ header .h-container span{
  align-items: center;
  height: 100%;
  gap: 30px;
+}
+.content .container{
+ height: 86vh;
 }
 .container .text{
  width: 40%;
