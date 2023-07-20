@@ -1,0 +1,138 @@
+body{
+ background-image: url("../images/technology/background-technology-desktop.jpg");
+}
+
+.tech-info .text{
+ width: 60%;
+ display: flex;
+ gap: 80px;
+ align-items: baseline;
+ justify-content: space-between;
+ position: relative;
+ min-height: 290px;
+}
+
+.m-i{
+ position: absolute;
+ left: 140px;
+ top: 0;
+ transition: .5s;
+ opacity: 0;
+}
+
+.m-i.shown{
+ opacity: 1;
+}
+.tech-info .image{
+ width: 35%;
+ bottom: auto;
+}
+
+.tech-info .text p.special{
+ margin: -25px 0 0 0;
+}
+
+.tech-info .text .bullets{
+ display: flex;
+ flex-direction: column;
+ height: 290px;
+ justify-content: space-around;
+ margin: auto 0;
+}
+
+.tech-info .text .bullets li{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 50px;
+ height: 50px;
+ background-color: transparent;
+ color: white;
+ border: 1px solid;
+ font-size: 22px;
+}
+
+.tech-info .text .bullets li.active{
+ background-color: white;
+ color: black;
+}
+
+@media only screen and (max-width: 1200px){
+ .crew-info,
+ .tech-info{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
+ .container{
+  position: relative;
+ }
+ .tech-info .text{
+  width: 100%;
+ }
+ .tech-info  .image{
+  width: 50%;
+  top: 60%;
+  right: auto;
+ }
+ .image img{
+  src: "../images/technology/image-launch-vehicle-landscape.jpg";
+ }
+}
+
+@media only screen and (max-width: 800px){
+ .details h1{
+  font-size: 20px;
+ }
+ body{
+  background-image: url("../images/technology/background-technology-tablet.jpg");
+ }
+ .tech-info .text p.special{
+  font-size: 50px;
+  margin: 0;
+ }
+ .container{
+  width: 90%;
+ }
+ .tech-info .image{
+  display: none;
+ }
+ .tech-info .text{
+  flex-direction: column-reverse;
+  align-items: center;
+ }
+ .tech-info .text .bullets{
+  flex-direction: row;
+  height: fit-content;
+  margin: 0;
+  margin-bottom: -90px;
+ }
+ .text .m-i {
+  left: 0;
+ }
+}
+
+
+@media only screen and (max-width: 425px){
+ body{
+  background-image: url("../images/technology/background-technology-mobile.jpg");
+ }
+ .container .text{
+  width: 100%;
+ }
+ .tech-info .text p.special{
+  font-size: 35px;
+ }
+ .details h1 span{
+  margin-right: 10px;
+ }
+ .details h1{
+  font-size: 14px;
+ }
+ .text p:first-child{
+  font-size: 18px;
+ }
+ .tech-info .text .bullets{
+  margin-bottom: -250px;
+ }
+}

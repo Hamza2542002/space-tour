@@ -1,0 +1,159 @@
+body{
+ background-image: url("../images/destination/background-destination-desktop.jpg");
+}
+
+p{
+ color: #ffffffbd;
+}
+
+.details {
+ margin-top: 35px;
+}
+.details h1{
+ color: #ffffffbd;
+ font-weight: 100;
+ letter-spacing: 2.0px;
+}
+
+.details h1 span{
+ color: #6c6c6cbd;
+ margin-right: 20px;
+}
+
+.details .container{
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: flex-start;
+ min-height: calc(100vh - 114px);
+ gap: 40px;
+ padding: 0 15px;
+}
+.f-d .image img{
+ max-width: 100%;
+ margin-top: 15px;
+}
+.f-d{
+ display: flex;
+ justify-content: space-between;
+ gap: 40px  ;
+ width: 95%;
+ margin: 0px auto;
+ min-height: 680px;
+}
+.f-d .info ul{
+ display: flex;
+ justify-content: flex-start;
+ gap: 40px;
+} 
+
+.f-d .info ul li{
+ color:#ffffffbd ;
+ cursor: pointer;
+ padding: 20px 0;
+}
+.info{
+ width: 45%;
+ position: relative;
+}
+.info .text{
+ width: 100%;
+ position: absolute;
+ left: 0;
+ top: 72px;
+}
+
+.info .text .special{
+ color: white;
+ font-size: 100px;
+}
+
+
+.info .text .n-i{
+ padding-bottom: 80px;
+ position: relative;
+}
+
+
+.info .text .n-i::after{
+ content: "";
+ width: 100%;
+ height: 1px;
+ background-color: #ffffffbd;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+}
+
+.d-i {
+ display: flex;
+ gap: 90px;
+ padding: 20px 0;
+}
+
+.d-i div p:last-child{
+ font-size: 25px;
+ color: white;
+}
+
+.active{
+ border-bottom: 2px solid white;
+}
+@media only screen and (max-width: 1200px){
+ .f-d{
+  flex-direction: column-reverse;
+  align-items: center;
+ }
+ .info{
+  width: 100%;
+ }
+}
+
+@media only screen and (max-width: 800px){
+ .details h1{
+  font-size: 20px;
+ }
+ body{
+  background-image: url("../images/destination/background-destination-tablet.jpg");
+ }
+ .image {
+  margin-top: 105px;
+}
+}
+
+@media only screen and (max-width: 425px){
+ body{
+  background-image: url("../images/destination/background-destination-mobile.jpg");
+ }
+ .info .text .special{
+  font-size: 60px;
+ }
+ .f-d .info ul{
+  gap: 0;
+  justify-content: space-between;
+ }
+ .details h1 span{
+  margin-right: 10px;
+ }
+ .details h1{
+  font-size: 14px;
+ }
+ .d-i div p:last-child{
+  font-size: 17px;
+ }
+ .d-i{
+  gap: 9px;
+  justify-content: space-between;
+ }
+ .f-d{
+  justify-content: flex-end;
+ }
+}
+
+.info .text{
+ opacity: 0;
+ transition: .5s;
+}
+
+.info .shown{
+ opacity: 1;
+}
